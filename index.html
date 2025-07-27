@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre et Icon -->
+    <title>Mon Portfolio - Développeur Web</title>
+    <link rel="icon" href="src/ink-machine-mod-profilePicture.png">
+
+    <!-- StylesHeet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\sections.css">
+    <link rel="stylesheet" href="css\responsive.css">
+    <link rel="stylesheet" href="css\navigation.css">
+    <link rel="stylesheet" href="css\footer.css">
+    <link rel="stylesheet" href="css\animation.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-github"></i>
+                <a href="#accueil">Portfolio</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#apropos" class="nav-link">À propos</a>
+                <a href="#competences" class="nav-link">Compétences</a>
+                <a href="#projets" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="theme-selector">
+                    <button class="theme-button" id="theme-button">
+                        <i class="fas fa-sun theme-icon"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="theme-dropdown" id="theme-dropdown">
+                        <div class="theme-option" data-theme="light">
+                            <i class="fas fa-sun"></i>
+                            <span>Clair</span>
+                        </div>
+                        <div class="theme-option" data-theme="dark">
+                            <i class="fas fa-moon"></i>
+                            <span>Sombre</span>
+                        </div>
+                        <div class="theme-option" data-theme="system">
+                            <i class="fas fa-desktop"></i>
+                            <span>Système</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="wave">👋</span> Salut, je suis <span class="username">@R3tr0___</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Développeur Full Stack passionné par la création d'applications web, de logiciels et de jeux vidéos.
+                    (Sinon j'aime les chats aussi)
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-code"></i>
+                        <span>20+ projets</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <span>100+ étoiles</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>10 contributeurs</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i>
+                        Voir mes projets
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Me contacter
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <img src="https://media.discordapp.net/attachments/1360735691440656515/1362903195243905206/2.png?ex=686c3c83&is=686aeb03&hm=c036251a7bc4fc9f5d562a835f9a853a60be1d9e0684289561ea5b8ecac4a99d&=&format=webp&quality=lossless&width=615&height=769"
+                            alt="Photo de profil de @R3tr0___"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <!-- Fallback si l'image ne charge pas -->
+                        <div class="profile-avatar-fallback" style="display: none;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>@R3tr0___</h3>
+                        <p>Développeur Full-Stack & Logiciel Multimédia</p>
+                        <div class="profile-stats">
+                            <span><i class="fas fa-map-marker-alt"></i> Namur, Belgique</span>
+                            <span><i class="fas fa-building"></i> Freelance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-user"></i>
+                    À propos de moi
+                </h2>
+                <p class="section-description">Un peu plus sur mon parcours et mes qualifications</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="readme-section">
+                        <h3>README.md</h3>
+                        <div class="code-block">
+                            <pre>
+                                <code>
+### 👨‍💻 Développeur Full Stack
+
+Passionné par le développement informatique depuis que j'ai 15 ans, je me spécialise dans 
+la création d'applications. J'aime résoudre des problèmes complexes et apprendre de nouvelles technologies.
+
+### 🎯 Objectifs actuels
+
+- Contribuer à des projets open source.
+- Améliorer mes compétences.
+- Découvrir de nouvelles compétences.
+- Partager mes connaissances.
+
+### 📍 parcours
+- 3ans d'apprentissage de divers langages de programmation.
+- 2ans d'apprentissage avec des outils de gestion de base de données.
+- 1ans d'apprentissage du moteur de jeu Unity.
+- 1ans d'apprentissage du frameWork WPF.
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="contribution-graph">
+                        <h4>Contributions dans l'année</h4>
+                        <div class="graph-container">
+                            <div class="graph-weeks">
+                                <!-- Généré dynamiquement par JavaScript -->
+                            </div>
+                        </div>
+                        <div class="graph-legend">
+                            <span>Moins</span>
+                            <div class="legend-squares">
+                                <div class="square level-0"></div>
+                                <div class="square level-1"></div>
+                                <div class="square level-2"></div>
+                                <div class="square level-3"></div>
+                                <div class="square level-4"></div>
+                            </div>
+                            <span>Plus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    Langages et Outils
+                </h2>
+                <p class="section-description">Technologies que j'utilise au quotidien, j'en maîtrise la plupart mais je
+                    suis continuellement en train d'apprendre.</p>
+            </div>
+
+            <!-- Compétences-grille -->
+            <div class="skills-grid">
+
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-paint-brush"></i>
+                        Frontend
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="devicon-sass-original"></i>
+                            </div>
+                            <span>SCSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-server"></i>
+                        Backend
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <span>Php8</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span>MySql</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Langages de programmation -->
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-code"></i>
+                        Logiciel & Application
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="devicon-csharp-plain"></i>
+                            </div>
+                            <span>CSharp</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="devicon-cplusplus-plain"></i>
+                            </div>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FrameWork -->
+                <div class="skill-category">
+                    <h3>
+                        <i class="devicon-dot-net-plain"></i>
+                        FrameWork
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="devicon-dot-net-plain"></i>
+                            </div>
+                            <span>.Net</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <span>WPF</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outils -->
+                <div class="skill-category">
+                    <h3>
+                        <i class="fas fa-tools"></i>
+                        Outils
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="devicon-vscode-plain"></i>
+                            </div>
+                            <span>VSC</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="devicon-visualstudio-plain"></i>
+                            </div>
+                            <span>VS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="devicon-unity-original"></i>
+                            </div>
+                            <span>Unity</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="devicon-unrealengine-plain"></i>
+                            </div>
+                            <span>UnrealEngine5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-folder-open"></i>
+                    Projets réalisés
+                </h2>
+                <p class="section-description">Mes projets les plus remarquables</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Yukais quest for cureness -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <i class="fas fa-folder"></i>
+                            <h3>Yukais quest for cureness</h3>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-public">Public</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Mon premier jeu réalisé sous Unity 2022.3.9F1. C'était mon projet de fin d'étude pour
+                        l'obtention de mon CESS à Asty-moulin.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">
+                            <div class="tech-dot csharp"></div>
+                            CSharp
+                        </span>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 7</span>
+                            <span><i class="fas fa-code-branch"></i> 3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.asty-moulin.be/informatique#programme" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/VintagixDev/UAA13-YukaisQuestForCureness" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Portfolio -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <i class="fas fa-folder"></i>
+                            <h3>Portfolio</h3>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-public">Public</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Ce site web portfolio dont le template est disponnible sur github à la demande.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">
+                            <div class="tech-dot html"></div>
+                            Html
+                        </span>
+                        <span class="tech-tag">
+                            <div class="tech-dot css"></div>
+                            CSS
+                        </span>
+                        <span class="tech-tag">
+                            <div class="tech-dot js"></div>
+                            JavaScript
+                        </span>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 3</span>
+                            <span><i class="fas fa-code-branch"></i> 0</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Andras-corda/portfolio" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/Andras-corda/portfolio" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTOS -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <i class="fas fa-folder"></i>
+                            <h3>CTOS</h3>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-public">Public</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Travail de fin d'année pour mon cours de Multimédia à Asty-moulin.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">
+                            <div class="tech-dot php"></div>
+                            PHP
+                        </span>
+                        <span class="tech-tag">
+                            <div class="tech-dot css"></div>
+                            CSS
+                        </span>
+                        <span class="tech-tag">
+                            <div class="tech-dot js"></div>
+                            JavaScript
+                        </span>
+                        <span class="tech-tag">
+                            <div class="tech-dot mysql"></div>
+                            Mysql
+                        </span>
+                        <span class="tech-tag">
+                            <div class="tech-dot json"></div>
+                            Json
+                        </span>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 6</span>
+                            <span><i class="fas fa-code-branch"></i> 0</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.asty-moulin.be/informatique#programme" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/R3tr0-andras/ctOS" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIM3NSI0N -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <i class="fas fa-folder"></i>
+                            <h3>DIM3NSI0N</h3>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-public">Privé</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Jeu vidéo en 2d sous Unity avec un cahier des charge et une roadmap.
+                        (En actuel développement au moment de la création du site)
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">
+                            <div class="tech-dot unity"></div>
+                            Unity
+                        </span>
+                        <span class="tech-tag">
+                            <div class="tech-dot csharp"></div>
+                            CSharp
+                        </span>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> 18</span>
+                            <span><i class="fas fa-code-branch"></i> 3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://docs.google.com/document/d/1SH9q7UJbMkfDXmbHWPMfPyaw5rgaahBnz0xNbuD_j8w/edit?usp=sharing"
+                                class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/Andras-corda/DIM3NSION" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ink Mod -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <i class="fas fa-folder"></i>
+                            <h3>Ink machine</h3>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-public">Privé</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Un mod pour le jeu Minecraft fait sous java et publié sur Curseforge. (En actuel développement
+                        au moment de la création du site)
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">
+                            <div class="tech-dot java"></div>
+                            Java
+                        </span>
+                        <span class="tech-tag">
+                            <div class="tech-dot json"></div>
+                            Json
+                        </span>
+                    </div>
+                    <div class="project-footer">
+                        <div class="project-stats">
+                            <span><i class="fas fa-download"></i> 1.1K</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.curseforge.com/minecraft/mc-mods/ink-machine" class="project-link">
+                                <iconify-icon icon="simple-icons:curseforge"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-envelope"></i>
+                    Me contacter
+                </h2>
+                <p class="section-description">N'hésitez pas à me contacter pour discuter de vos projets</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>andrascorda.switch@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localisation</h4>
+                                <p>Namur, Belgique</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Disponibilité</h4>
+                                <p>Lun - Ven, 9h - 18h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=andrascorda.switch@gmail.com"
+                            class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://discord.com/users/411170239607472128" class="social-link">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="/" class="social-link">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Portfolio. Conçu avec <i class="fas fa-heart"></i> et beaucoup de café</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#" class="footer-link" id="privacy-link">Politique de confidentialité</a>
+                    <a href="#" class="footer-link" id="legal-link">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Politique de Confidentialité -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Politique de Confidentialité</h2>
+                <button class="close" id="close-privacy">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>1. Collecte des informations</h3>
+                <p>Nous ne collectons aucune informations lorsque vous visitez notre site.</p>
+
+                <h3>2. Confidentialité des informations</h3>
+                <p>Nous sommes les seuls propriétaires des informations sur ce site.</p>
+
+                <h3>3. Cookies</h3>
+                <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. Les cookies sont de petits
+                    fichiers qu'un site ou son fournisseur de services transfère sur le disque dur de votre ordinateur
+                    par l'intermédiaire de votre navigateur Web (si vous le permettez).</p>
+
+                <h3>4. Consentement</h3>
+                <p>En utilisant notre site, vous consentez à notre politique de confidentialité.</p>
+
+                <h3>5. Contact</h3>
+                <p>Si vous avez des questions concernant cette politique de confidentialité, vous pouvez nous contacter
+                    à l'adresse suivante : andrascorda.switch@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mentions Légales -->
+    <div id="legal-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Mentions Légales</h2>
+                <button class="close" id="close-legal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>1. Informations légales</h3>
+                <p><strong>Nom du site :</strong> Portfolio</p>
+                <p><strong>Email :</strong> andrascorda.switch@gmail.com</p>
+
+                <h3>2. Directeur de la publication</h3>
+                <p><strong>Nom :</strong> Andras</p>
+                <p><strong>Qualité :</strong> Propriétaire du site</p>
+
+                <h3>3. Hébergement</h3>
+                <p><strong>Hébergeur :</strong> Heroku</p>
+
+                <h3>4. Propriété intellectuelle</h3>
+                <p>L'ensemble de ce site relève de la législation internationale sur le droit d'auteur et la propriété
+                    intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents
+                    téléchargeables et les représentations iconographiques et photographiques.</p>
+
+                <h3>5. Responsabilité</h3>
+                <p>Les informations contenues sur ce site sont aussi précises que possible et le site remis à jour au
+                    fur et à mesure, mais peut toutefois contenir des inexactitudes ou des omissions.</p>
+
+                <h3>6. Liens hypertextes</h3>
+                <p>Ce site contient un certain nombre de liens hypertextes vers d'autres sites. Cependant, nous n'avons
+                    pas la possibilité de vérifier le contenu des sites ainsi visités et déclinons donc toute
+                    responsabilité de ce fait.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script\script.js"></script>
+    <script src="script\scriptModal.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
