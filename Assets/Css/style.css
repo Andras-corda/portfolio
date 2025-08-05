@@ -53,3 +53,18 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.icon-electron {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: var(--accent-primary);
+  -webkit-mask-image: url('/assets/electron.svg');
+  mask-image: url('/assets/electron.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+}

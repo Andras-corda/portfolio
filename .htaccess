@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Laisser passer les fichiers et dossiers réels (ex: CSS, images...)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Faire passer tout le reste par index.php (routing central)
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
